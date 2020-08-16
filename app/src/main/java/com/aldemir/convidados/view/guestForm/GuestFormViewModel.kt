@@ -21,7 +21,7 @@ class GuestFormViewModel(application: Application): AndroidViewModel(application
 
         val guest = GuestModel(name = name, presence = presence)
         val saved = mGuestRepository.save(guest)
-       mSaveGuest.postValue(saved)
+        mSaveGuest.postValue(saved)
     }
 
 }
